@@ -1,0 +1,48 @@
+{
+ "id": "/shadow",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Shadow",
+  "description": "Shadow that can be attached to layers",
+  "type": "object",
+  "definitions": {
+    "radius": {
+      "type": "number",
+      "description": "Blur radius of the shadow",
+      "example": 4,
+      "minimum": 0,
+    },
+    "offset": {
+      "type": "object",
+      "description": "Shadow offset from the layer its attached to",
+      "properties": {
+         "x": {
+           "type": "number", 
+           "description": "horizontal offset", 
+           "example": 2,
+         },
+         "y": {
+           "type": "number", 
+           "description": "vertical offset", 
+           "example": 2,
+         }
+      },
+      "example": {
+        "x": 2,
+        "y": 2
+      }
+
+    },
+  },
+  "properties": {
+    "radius": {
+      "$ref": "#/definitions/radius"
+    },
+    "offset": {
+      "$ref": "#/definitions/offset"
+    },
+    "color": {
+      "$ref": "./color.json"
+    },
+  },
+  "ypCategory": "Primitives"
+}

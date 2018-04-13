@@ -1,0 +1,36 @@
+{
+  "$id": "/rectanglePath",
+  "type": "object",
+  "title": "RectanglePath",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents rectangular path to be used inside of a Shape layer",
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to RectanglePath",
+      "example": "RectanglePath",
+      "pattern": "RectanglePath"
+    },
+    "cornerRadius": {
+      "type": "number",
+      "description": "Radius of the corners of the rectangle.",
+      "example": "4",
+      "minimum": 0
+    },
+
+
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "frame": {
+      "description": "Dimensions of the rectangle. `x' and `y` should be `0`",
+      "$ref": "./rect.json"
+    },
+    "cornerRadius": {
+      "$ref": "#/definitions/cornerRadius"
+    },
+  },
+  "ypCategory": "Shapes"
+}

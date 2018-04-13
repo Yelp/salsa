@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63D319537A66F184274625EF /* Pods_SalsaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B12FEBFB99C6E18AACE201 /* Pods_SalsaExample.framework */; };
+		A4B520F3160F261AFF9E012C /* Pods_SalsaExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06EEBD809D2604383ACA482 /* Pods_SalsaExampleTests.framework */; };
+		D83CE6B1203E39D600F24549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6B0203E39D600F24549 /* AppDelegate.swift */; };
+		D83CE6B3203E39D600F24549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6B2203E39D600F24549 /* ViewController.swift */; };
+		D83CE6B6203E39D600F24549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CE6B4203E39D600F24549 /* Main.storyboard */; };
+		D83CE6B8203E39D600F24549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CE6B7203E39D600F24549 /* Assets.xcassets */; };
+		D83CE6BB203E39D600F24549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CE6B9203E39D600F24549 /* LaunchScreen.storyboard */; };
+		D83CE6C6203E39D600F24549 /* SalsaExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6C5203E39D600F24549 /* SalsaExampleTests.swift */; };
+		D83CE6D2203E3F1800F24549 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6D1203E3F1800F24549 /* Button.swift */; };
+		D83CE6D4203E413A00F24549 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6D3203E413A00F24549 /* UserView.swift */; };
+		D83CE6D6203E426300F24549 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6D5203E426300F24549 /* FontStyle.swift */; };
+		D83CE6D9203E4A4B00F24549 /* UserView+Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6D8203E4A4B00F24549 /* UserView+Sketch.swift */; };
+		D83CE6DB203F813B00F24549 /* Button+Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6DA203F813B00F24549 /* Button+Sketch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83CE6C2203E39D600F24549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83CE6A5203E39D600F24549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83CE6AC203E39D600F24549;
+			remoteInfo = SketchGeneratorExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		329623F1F39F068A971E2452 /* Pods-SalsaExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalsaExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55F0D1A55C1EC0BEB11FEE5D /* Pods-SalsaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalsaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample.release.xcconfig"; sourceTree = "<group>"; };
+		5A4AD647DB5F526CB3627282 /* Pods-SalsaExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalsaExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C06EEBD809D2604383ACA482 /* Pods_SalsaExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalsaExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CE6AD203E39D600F24549 /* SalsaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalsaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CE6B0203E39D600F24549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D83CE6B2203E39D600F24549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D83CE6B5203E39D600F24549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83CE6B7203E39D600F24549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83CE6BA203E39D600F24549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D83CE6BC203E39D600F24549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CE6C1203E39D600F24549 /* SalsaExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalsaExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CE6C5203E39D600F24549 /* SalsaExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalsaExampleTests.swift; sourceTree = "<group>"; };
+		D83CE6C7203E39D600F24549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CE6D1203E3F1800F24549 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		D83CE6D3203E413A00F24549 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D83CE6D5203E426300F24549 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		D83CE6D8203E4A4B00F24549 /* UserView+Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserView+Sketch.swift"; sourceTree = "<group>"; };
+		D83CE6DA203F813B00F24549 /* Button+Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Sketch.swift"; sourceTree = "<group>"; };
+		E191C898E429FFB44D3C0D0A /* Pods-SalsaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalsaExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E7B12FEBFB99C6E18AACE201 /* Pods_SalsaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalsaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83CE6AA203E39D600F24549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D319537A66F184274625EF /* Pods_SalsaExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CE6BE203E39D600F24549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B520F3160F261AFF9E012C /* Pods_SalsaExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		377221A982A8462DE81B09B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B12FEBFB99C6E18AACE201 /* Pods_SalsaExample.framework */,
+				C06EEBD809D2604383ACA482 /* Pods_SalsaExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612ED0CC0930B601210E7E23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E191C898E429FFB44D3C0D0A /* Pods-SalsaExample.debug.xcconfig */,
+				55F0D1A55C1EC0BEB11FEE5D /* Pods-SalsaExample.release.xcconfig */,
+				329623F1F39F068A971E2452 /* Pods-SalsaExampleTests.debug.xcconfig */,
+				5A4AD647DB5F526CB3627282 /* Pods-SalsaExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D83CE6A4203E39D600F24549 = {
+			isa = PBXGroup;
+			children = (
+				D83CE6AF203E39D600F24549 /* SalsaExample */,
+				D83CE6C4203E39D600F24549 /* SalsaExampleTests */,
+				D83CE6AE203E39D600F24549 /* Products */,
+				612ED0CC0930B601210E7E23 /* Pods */,
+				377221A982A8462DE81B09B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D83CE6AE203E39D600F24549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83CE6AD203E39D600F24549 /* SalsaExample.app */,
+				D83CE6C1203E39D600F24549 /* SalsaExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83CE6AF203E39D600F24549 /* SalsaExample */ = {
+			isa = PBXGroup;
+			children = (
+				D83CE6D0203E3EFE00F24549 /* Components */,
+				D83CE6B0203E39D600F24549 /* AppDelegate.swift */,
+				D83CE6B2203E39D600F24549 /* ViewController.swift */,
+				D83CE6B4203E39D600F24549 /* Main.storyboard */,
+				D83CE6B7203E39D600F24549 /* Assets.xcassets */,
+				D83CE6B9203E39D600F24549 /* LaunchScreen.storyboard */,
+				D83CE6BC203E39D600F24549 /* Info.plist */,
+			);
+			path = SalsaExample;
+			sourceTree = "<group>";
+		};
+		D83CE6C4203E39D600F24549 /* SalsaExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D83CE6D7203E4A3600F24549 /* SketchRepresentable */,
+				D83CE6C5203E39D600F24549 /* SalsaExampleTests.swift */,
+				D83CE6C7203E39D600F24549 /* Info.plist */,
+			);
+			path = SalsaExampleTests;
+			sourceTree = "<group>";
+		};
+		D83CE6D0203E3EFE00F24549 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D83CE6D1203E3F1800F24549 /* Button.swift */,
+				D83CE6D3203E413A00F24549 /* UserView.swift */,
+				D83CE6D5203E426300F24549 /* FontStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D83CE6D7203E4A3600F24549 /* SketchRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				D83CE6D8203E4A4B00F24549 /* UserView+Sketch.swift */,
+				D83CE6DA203F813B00F24549 /* Button+Sketch.swift */,
+			);
+			path = SketchRepresentable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83CE6AC203E39D600F24549 /* SalsaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CE6CA203E39D600F24549 /* Build configuration list for PBXNativeTarget "SalsaExample" */;
+			buildPhases = (
+				3FE72297C2C8BB7110115559 /* [CP] Check Pods Manifest.lock */,
+				D83CE6A9203E39D600F24549 /* Sources */,
+				D83CE6AA203E39D600F24549 /* Frameworks */,
+				D83CE6AB203E39D600F24549 /* Resources */,
+				4EE5F5732E014669039A5C81 /* [CP] Embed Pods Frameworks */,
+				2E2213025FDAECFCCD6069FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalsaExample;
+			productName = SketchGeneratorExample;
+			productReference = D83CE6AD203E39D600F24549 /* SalsaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83CE6C0203E39D600F24549 /* SalsaExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CE6CD203E39D600F24549 /* Build configuration list for PBXNativeTarget "SalsaExampleTests" */;
+			buildPhases = (
+				CE37AD9C3D419D78987971CD /* [CP] Check Pods Manifest.lock */,
+				D83CE6BD203E39D600F24549 /* Sources */,
+				D83CE6BE203E39D600F24549 /* Frameworks */,
+				D83CE6BF203E39D600F24549 /* Resources */,
+				62B06F777953ADA2BD673C62 /* [CP] Embed Pods Frameworks */,
+				30587EC41DDA5350A69A1B57 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83CE6C3203E39D600F24549 /* PBXTargetDependency */,
+			);
+			name = SalsaExampleTests;
+			productName = SketchGeneratorExampleTests;
+			productReference = D83CE6C1203E39D600F24549 /* SalsaExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83CE6A5203E39D600F24549 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Yelp;
+				TargetAttributes = {
+					D83CE6AC203E39D600F24549 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D83CE6C0203E39D600F24549 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D83CE6AC203E39D600F24549;
+					};
+				};
+			};
+			buildConfigurationList = D83CE6A8203E39D600F24549 /* Build configuration list for PBXProject "SalsaExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D83CE6A4203E39D600F24549;
+			productRefGroup = D83CE6AE203E39D600F24549 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83CE6AC203E39D600F24549 /* SalsaExample */,
+				D83CE6C0203E39D600F24549 /* SalsaExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83CE6AB203E39D600F24549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CE6BB203E39D600F24549 /* LaunchScreen.storyboard in Resources */,
+				D83CE6B8203E39D600F24549 /* Assets.xcassets in Resources */,
+				D83CE6B6203E39D600F24549 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CE6BF203E39D600F24549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E2213025FDAECFCCD6069FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30587EC41DDA5350A69A1B57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE72297C2C8BB7110115559 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalsaExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE5F5732E014669039A5C81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Salsa/Salsa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Salsa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62B06F777953ADA2BD673C62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE37AD9C3D419D78987971CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalsaExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83CE6A9203E39D600F24549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CE6B3203E39D600F24549 /* ViewController.swift in Sources */,
+				D83CE6D2203E3F1800F24549 /* Button.swift in Sources */,
+				D83CE6B1203E39D600F24549 /* AppDelegate.swift in Sources */,
+				D83CE6D4203E413A00F24549 /* UserView.swift in Sources */,
+				D83CE6D6203E426300F24549 /* FontStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CE6BD203E39D600F24549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CE6DB203F813B00F24549 /* Button+Sketch.swift in Sources */,
+				D83CE6C6203E39D600F24549 /* SalsaExampleTests.swift in Sources */,
+				D83CE6D9203E4A4B00F24549 /* UserView+Sketch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83CE6C3203E39D600F24549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83CE6AC203E39D600F24549 /* SalsaExample */;
+			targetProxy = D83CE6C2203E39D600F24549 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D83CE6B4203E39D600F24549 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CE6B5203E39D600F24549 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D83CE6B9203E39D600F24549 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CE6BA203E39D600F24549 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83CE6C8203E39D600F24549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SalsaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D83CE6C9203E39D600F24549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SalsaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83CE6CB203E39D600F24549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E191C898E429FFB44D3C0D0A /* Pods-SalsaExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SalsaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salsa.SalsaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D83CE6CC203E39D600F24549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F0D1A55C1EC0BEB11FEE5D /* Pods-SalsaExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SalsaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salsa.SalsaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D83CE6CE203E39D600F24549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329623F1F39F068A971E2452 /* Pods-SalsaExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SalsaExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salsa.SalsaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalsaExample.app/SalsaExample";
+			};
+			name = Debug;
+		};
+		D83CE6CF203E39D600F24549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4AD647DB5F526CB3627282 /* Pods-SalsaExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SalsaExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salsa.SalsaExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalsaExample.app/SalsaExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83CE6A8203E39D600F24549 /* Build configuration list for PBXProject "SalsaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CE6C8203E39D600F24549 /* Debug */,
+				D83CE6C9203E39D600F24549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CE6CA203E39D600F24549 /* Build configuration list for PBXNativeTarget "SalsaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CE6CB203E39D600F24549 /* Debug */,
+				D83CE6CC203E39D600F24549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CE6CD203E39D600F24549 /* Build configuration list for PBXNativeTarget "SalsaExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CE6CE203E39D600F24549 /* Debug */,
+				D83CE6CF203E39D600F24549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D83CE6A5203E39D600F24549 /* Project object */;
+}

@@ -1,0 +1,53 @@
+{
+ "id": "/color",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Color",
+  "description": "Represents a RGBA color",
+  "type": "object",
+  "definitions": {
+    "red": {
+      "type": "number",
+      "description": "Amount of red in the color",
+      "example": 0.5,
+      "minimum": 0,
+      "maximum": 1
+    },
+    "green": {
+      "type": "number",
+      "description": "Amount of red in the color",
+      "example": 0.5,
+      "minimum": 0,
+      "maximum": 1
+    },
+    "blue": {
+      "type": "number",
+      "description": "Amount of red in the color",
+      "example": 0.5,
+      "minimum": 0,
+      "maximum": 1
+    },
+    "alpha": {
+      "type": "number",
+      "description": "Transparency of the color",
+      "example": 0.5,
+      "minimum": 0,
+      "maximum": 1
+    },
+ 
+  },
+  "properties": {
+    "red": {
+      "$ref": "#/definitions/red"
+    },
+    "green": {
+      "$ref": "#/definitions/green"
+    },
+    "blue": {
+      "$ref": "#/definitions/blue"
+    },
+    "alpha": {
+      "$ref": "#/definitions/alpha"
+    }
+  },
+  "ypCategory": "Primitives"
+}

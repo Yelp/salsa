@@ -1,0 +1,45 @@
+{
+ "id": "/rectangle",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Rectangle",
+  "description": "Represents a rectangle with a position and size",
+  "type": "object",
+  "definitions": {
+    "x": {
+      "type": "number",
+      "description": "x position of the rectangle",
+      "example": 0
+    },
+    "y": {
+      "type": "number",
+      "description": "y position of the rectangle",
+      "example": 0
+    },
+    "width": {
+      "type": "number",
+      "description": "width of the rectangle",
+      "example": 100
+    },
+    "height": {
+      "type": "number",
+      "description": "height of the rectangle",
+      "example": 100
+    },
+ 
+  },
+  "properties": {
+    "x": {
+      "$ref": "#/definitions/x"
+    },
+    "y": {
+      "$ref": "#/definitions/y"
+    },
+    "width": {
+      "$ref": "#/definitions/width"
+    },
+    "height": {
+      "$ref": "#/definitions/height"
+    }
+  },
+  "ypCategory": "Primitives"
+}

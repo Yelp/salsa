@@ -1,0 +1,45 @@
+{
+  "$id": "/text",
+  "type": "object",
+  "title": "Text",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a text layer in Sketch",
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to Text",
+      "example": "Text",
+      "pattern": "Text"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the Text layer as it appears in Sketch. Doesn't have to but it's nice if this matches the value of the displayed text.",
+      "example": "Hello World"
+    },
+    "segments": {
+      "type": "array",
+      "description": "Segments of styled text contained in the text layer",
+      "items": {
+        "anyOf": [
+          { "$ref": "./textsegment.json" }
+        ]
+      }
+    }
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "segments": {
+      "$ref": "#/definitions/segments"
+    },
+    "frame": {
+      "description": "Position and size of the layer relative to its parent",
+      "$ref": "./rect.json"
+    },
+  },
+  "ypCategory": "Text"
+}

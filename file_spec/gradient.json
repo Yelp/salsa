@@ -1,0 +1,125 @@
+{
+ "id": "/gradient",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Gradient",
+  "description": "Gradient that can be set as the background of shapes",
+  "type": "object",
+  "definitions": {
+    "colors": {
+      "type": "array",
+      "description": "Colors of the gradient anchor points",
+      "items": {
+        "anyOf": [
+          { "$ref": "./color.json" }
+        ]
+      },
+      "example": [
+        {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "alpha": 1
+        },
+        {
+          "red": 1,
+          "green": 1,
+          "blue": 1,
+          "alpha": 1
+        }
+      ]
+    },
+    "locations": {
+      "type": "array",
+      "description": "Position of the colors contained in the gradient. Must have the same amount of elements as `colors`",
+      "items": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number", 
+            "description": "horizontal position", 
+            "example": 0.5,
+            "minimum": 0,
+            "maximum": 1
+          },
+          "y": {
+             "type": "number", 
+            "description": "vertical position", 
+            "example": 0.5,
+            "minimum": 0,
+            "maximum": 1
+          },
+          "example": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+      },
+      "example": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        }
+      ]
+    },
+    "start": {
+      "type": "object",
+      "description": "Start point of the gradient",
+      "properties": {
+        "x": {
+          "type": "number", 
+          "description": "horizontal position", 
+          "example": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "y": {
+          "type": "number", 
+          "description": "vertical position", 
+          "example": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+      }
+    },
+    "end": {
+      "type": "object",
+      "description": "End point of the gradient",
+      "properties": {
+        "x": {
+          "type": "number", 
+          "description": "horizontal position", 
+          "example": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "y": {
+          "type": "number", 
+          "description": "vertical position", 
+          "example": 1,
+          "minimum": 0,
+          "maximum": 1
+        },
+      }
+    }
+
+  },
+  "properties": {
+    "colors": {
+      "$ref": "#/definitions/colors"
+    },
+    "locations": {
+      "$ref": "#/definitions/locations"
+    },
+    "start": {
+      "$ref": "#/definitions/start"
+    },    
+    "end": {
+      "$ref": "#/definitions/end"
+    },
+  },
+  "ypCategory": "Shapes"
+}

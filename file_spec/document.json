@@ -1,0 +1,49 @@
+{
+  "$id": "/document",
+  "type": "object",
+  "title": "Document",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents an entire sketch document.",
+
+  "definitions": {
+    "pages": {
+      "type": "array",
+      "description": "The pages contained in the document",
+      "items": {
+        "anyOf": [
+          { "$ref": "./page.json" }
+        ]
+      }
+    },
+    "colors": {
+      "type": "array",
+      "description": "Colors shared by the entire document",
+      "items": {
+        "anyOf": [
+          { "$ref": "./color.json" }
+        ]
+      }
+    },
+    "textStyles": {
+      "type": "array",
+      "description": "Text styles shared by the entire document",
+      "items": {
+        "anyOf": [
+          { "$ref": "./sharedTextStyle.json" }
+        ]
+      }
+    }
+  },
+  "properties": {
+    "pages": {
+      "$ref": "#/definitions/pages"
+    },
+    "colors": {
+      "$ref": "#/definitions/colors"
+    },
+    "textStyles": {
+      "$ref": "#/definitions/textStyles"
+    },
+  },
+  "ypCategory": "Document"
+}

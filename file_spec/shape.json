@@ -1,0 +1,64 @@
+{
+  "$id": "/shape",
+  "type": "object",
+  "title": "Shape",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a shape layer in Sketch",
+
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to Shape",
+      "example": "Shape",
+      "pattern": "Shape"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the shape as it appears in Sketch",
+      "example": "My Shape"
+    },
+    "borderWidth": {
+      "type": "number",
+      "description": "Thickness of the border",
+      "minimum": 0,
+      "example": 1
+    },
+    "isMask": {
+      "type": "boolean",
+      "description": "Whether this shape will act as a mask for all layers below it",
+      "example": false
+    },
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "frame": {
+      "description": "Position and size of the shape in its parent container",
+      "$ref": "./rect.json"
+    },
+    "borderWidth": {
+      "$ref": "#/definitions/borderWidth"
+    },
+    "borderColor": {
+      "description": "Color of the border",
+      "$ref": "./color.json"
+    },
+    "backgroundColor": {
+      "description": "Color of the background. Will be ignored if `gradient` is set",
+      "$ref": "./color.json"
+    },
+    "gradient": {
+      "description": "`(optional)` A gradient to be used as the background of the shape.",
+      "$ref": "./gradient.json"
+    },
+    "path": {
+      "description": "A path object representing the how the shape should be drawn",
+      "$ref": "./rectanglePath.json"
+    },
+  },
+  "ypCategory": "Shapes"
+}

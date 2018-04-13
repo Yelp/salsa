@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Building project and exporting view snapshots"
+xcodebuild test -workspace SalsaExample.xcworkspace/ -scheme SalsaExample -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1'
+if [ $? -ne 0 ]; then
+	echo "Failed to export view snapshots"
+	exit 1
+fi
+
+# Compile salsa command line tool binary
+# If you have already installed the salsa binary you can just use it instead of compiling it every time
+xcodebuild -project ../SalsaCompiler/SalsaCompiler.xcodeproj/
+if [ $? -ne 0 ]; then
+	echo "Failed to build SalsaCompiler"
+	exit 1
+fi
+
+echo "Compiling view snapshots and creating sketch assets"
+../SalsaCompiler/build/Release/salsa -f /tmp/SalsaExample/generated.salsa -e ExampleSketch
+if [ $? -ne 0 ]; then
+	echo "Failed to build sketch file"
+	exit 1
+fi

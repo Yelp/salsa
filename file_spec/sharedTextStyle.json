@@ -1,0 +1,23 @@
+{
+ "id": "/sharedTextStyle",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SharedTextStyle",
+  "description": "A global text style shared by an entire document",
+  "type": "object",
+  "definitions": {
+    "name": {
+      "type": "string",
+      "description": "Name of the text style as it appears in the sketch dropdown menu. If sketchCompiler encounters this text style being used by Text elements it will reference the global text style",
+      "example": "Paragraph Bold"
+    },
+  },
+  "properties": {
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "textStyle": {
+      "$ref": "./textStyle.json"
+    }
+  },
+  "ypCategory": "Document"
+}

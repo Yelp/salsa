@@ -1,0 +1,33 @@
+{
+  "$id": "/page",
+  "type": "object",
+  "title": "Page",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a sketch page.",
+
+  "definitions": {
+    "name": {
+      "type": "string",
+      "description": "Name of the page as it appears in Sketch",
+      "example": "My Page"
+    },
+    "layers": {
+      "type": "array",
+      "description": "Child layers",
+      "items": {
+        "description": "Any of the following: `Artboard`, `SymbolMaster`, `Group`, `Bitmap`, `SymbolInstance`, `Text`, `Shape`",
+      },
+      "example": []
+    }
+  },
+  "properties": {
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "layers": {
+      "description": "Child layers contained in the artboard",
+      "$ref": "#/definitions/layers"
+    },
+  },
+  "ypCategory": "Containers"
+}

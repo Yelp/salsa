@@ -1,0 +1,59 @@
+{
+  "$id": "/group",
+  "type": "object",
+  "title": "Group",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a sketch group. Meant to contain other layers",
+
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to Group",
+      "example": "Group",
+      "pattern": "Group"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the group as it appears in Sketch",
+      "example": "My Group"
+    },
+    "alpha": {
+      "type": "number",
+      "description": "Transparency of the group",
+      "minimum": 0,
+      "maximum": 1,
+      "example": 1
+    },
+    "layers": {
+      "type": "array",
+      "description": "Child layers",
+      "items": {
+        "description": "Any of the following: `Group`, `Bitmap`, `SymbolInstance`, `Text`, `Shape`",
+      },
+      "example": []
+    }
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "layers": {
+      "$ref": "#/definitions/layers"
+    },
+    "alpha": {
+      "$ref": "#/definitions/alpha"
+    },
+    "frame": {
+      "description": "Position and size of the group in the parent layer",
+      "$ref": "./rect.json"
+    },
+    "shadow": {
+      "description": "`(optional)` Shadow that can be attached to layers",
+      "$ref": "./shadow.json",
+    },
+  },
+  "ypCategory": "Containers"
+}

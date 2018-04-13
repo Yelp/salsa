@@ -1,0 +1,49 @@
+{
+  "$id": "/symbolmaster",
+  "type": "object",
+  "title": "SymbolMaster",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a sketch symbol. Should be placed on its own special \"Symbols\" page",
+
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to SymbolMaster",
+      "example": "SymbolMaster",
+      "pattern": "SymbolMaster"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the symbol as it appears in Sketch. To expose nested dropdowns in sketch insert \"/\" into the name. e.g. `Button/Small/Blue`",
+      "example": "My Symbol"
+    },
+    "layers": {
+      "type": "array",
+      "description": "Child layers",
+      "items": {
+        "description": "Any of the following: `Group`, `Bitmap`, `SymbolInstance`, `Text`, `Shape`",
+      },
+      "example": []
+    }
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "layers": {
+      "$ref": "#/definitions/layers"
+    },
+    "frame": {
+      "description": "Position and size of the symbol",
+      "$ref": "./rect.json"
+    },
+    "shadow": {
+      "description": "`(optional)` Shadow that can be attached to layers",
+      "$ref": "./shadow.json",
+    },
+  },
+  "ypCategory": "Symbols"
+}

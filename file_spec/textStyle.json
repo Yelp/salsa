@@ -1,0 +1,51 @@
+{
+ "id": "/textstyle",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TextStyle",
+  "description": "Styling information for text",
+  "type": "object",
+  "definitions": {
+    "fontDescriptor": {
+      "type": "string",
+      "description": "Name of the font in macOS.\nStandard naming convention is `FontNameInCamelCase-FontWeightInCamelCase.`\ni.e. SFPro-Regular, Arial-Black, HelveticaNeue-UltraLight",
+      "example": "SFPro-Regular"
+    },
+    "fontSize": {
+      "type": "number",
+      "description": "Font point size",
+      "example": 15
+    },
+    "alignment": {
+      "type": "integer",
+      "description": "0 = left, 1 = right, 2 = center",
+      "minimum": 0,
+      "maximum": 2,
+      "example": 0
+    },
+    "isUnderlined": {
+      "type": "boolean",
+      "description": "whether the text is underlined",
+      "example": false
+    },
+ 
+  },
+  "properties": {
+    "fontDescriptor": {
+      "$ref": "#/definitions/fontDescriptor"
+    },
+    "fontSize": {
+      "$ref": "#/definitions/fontSize"
+    },
+    "alignment": {
+      "$ref": "#/definitions/alignment"
+    },
+    "isUnderlined": {
+      "$ref": "#/definitions/isUnderlined"
+    },
+    "color": {
+      "description": "Color of the text",
+      "$ref": "./color.json"
+    }
+  },
+  "ypCategory": "Text"
+}

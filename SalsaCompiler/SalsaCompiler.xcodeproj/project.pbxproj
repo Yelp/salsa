@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D81A13241F6B452E007144D1 /* CommonFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13231F6B452E007144D1 /* CommonFactories.swift */; };
+		D81A132B1F6C48B7007144D1 /* Layer+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A132A1F6C48B7007144D1 /* Layer+SketchJson.swift */; };
+		D81A132D1F6C48E0007144D1 /* Page+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A132C1F6C48E0007144D1 /* Page+SketchJson.swift */; };
+		D81A132F1F6C4EFD007144D1 /* Artboard+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A132E1F6C4EFD007144D1 /* Artboard+SketchJson.swift */; };
+		D81A13311F6C4F41007144D1 /* SymbolMaster+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13301F6C4F41007144D1 /* SymbolMaster+SketchJson.swift */; };
+		D81A13331F6C5037007144D1 /* Group+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13321F6C5037007144D1 /* Group+SketchJson.swift */; };
+		D81A13351F6C5076007144D1 /* Shape+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13341F6C5076007144D1 /* Shape+SketchJson.swift */; };
+		D81A13371F6C509F007144D1 /* Bitmap+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13361F6C509F007144D1 /* Bitmap+SketchJson.swift */; };
+		D81A13391F6C50A9007144D1 /* Text+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13381F6C50A9007144D1 /* Text+SketchJson.swift */; };
+		D81A133B1F6C55A4007144D1 /* Gradient+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A133A1F6C55A4007144D1 /* Gradient+SketchJson.swift */; };
+		D81A133D1F6C55BD007144D1 /* SymbolInstance+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A133C1F6C55BD007144D1 /* SymbolInstance+SketchJson.swift */; };
+		D81A133F1F6C5609007144D1 /* CGRect+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A133E1F6C5609007144D1 /* CGRect+SketchJson.swift */; };
+		D81A13411F6C5623007144D1 /* Color+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A13401F6C5623007144D1 /* Color+SketchJson.swift */; };
+		D81EA3031FA28E4C00A06CB2 /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EA3021FA28E4C00A06CB2 /* NSAttributedString+Utils.swift */; };
+		D82C338D1F95807400FCEF66 /* Group+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C338C1F95807400FCEF66 /* Group+Simplified.swift */; };
+		D82C338F1F9580C600FCEF66 /* Artboard+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C338E1F9580C600FCEF66 /* Artboard+Simplified.swift */; };
+		D82C33911F9580F000FCEF66 /* Shape+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C33901F9580F000FCEF66 /* Shape+Simplified.swift */; };
+		D82C33931F95810E00FCEF66 /* Text+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C33921F95810E00FCEF66 /* Text+Simplified.swift */; };
+		D82C33951F95813100FCEF66 /* Page+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C33941F95813100FCEF66 /* Page+Simplified.swift */; };
+		D82C33971F95814D00FCEF66 /* Symbol+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C33961F95814D00FCEF66 /* Symbol+Simplified.swift */; };
+		D84B6EDD1F7C156F00748A3F /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84B6EDC1F7C156F00748A3F /* Shadow.swift */; };
+		D85E37211F7C4461009EB5FC /* Shadow+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E37201F7C4461009EB5FC /* Shadow+SketchJson.swift */; };
+		D86378481FD8B27C003124BB /* ShapePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86378471FD8B27C003124BB /* ShapePath.swift */; };
+		D863784C1FD8BA0C003124BB /* ShapePath+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D863784B1FD8BA0C003124BB /* ShapePath+SketchJson.swift */; };
+		D86B35C01F75DAEA00864EE7 /* Document+SketchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B35BF1F75DAEA00864EE7 /* Document+SketchJson.swift */; };
+		D879E2841F72EAEC00285E24 /* Artboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2781F72EAE800285E24 /* Artboard.swift */; };
+		D879E2851F72EAEE00285E24 /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2801F72EAE900285E24 /* Bitmap.swift */; };
+		D879E2861F72EAF100285E24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27E1F72EAE900285E24 /* Color.swift */; };
+		D879E2871F72EAF700285E24 /* CoreGraphics+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27D1F72EAE900285E24 /* CoreGraphics+Extensions.swift */; };
+		D879E2881F72EAF900285E24 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2791F72EAE800285E24 /* Document.swift */; };
+		D879E2891F72EAFC00285E24 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27A1F72EAE800285E24 /* Gradient.swift */; };
+		D879E28A1F72EAFF00285E24 /* JsonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27F1F72EAE900285E24 /* JsonProtocols.swift */; };
+		D879E28B1F72EB0200285E24 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27B1F72EAE800285E24 /* Page.swift */; };
+		D879E28C1F72EB0400285E24 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2811F72EAE900285E24 /* Shape.swift */; };
+		D879E28D1F72EB0700285E24 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E27C1F72EAE800285E24 /* Layer.swift */; };
+		D879E28E1F72EB0A00285E24 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2821F72EAE900285E24 /* Symbol.swift */; };
+		D879E28F1F72EB0C00285E24 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2831F72EAE900285E24 /* Text.swift */; };
+		D879E2901F72EB0E00285E24 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2771F72EAE800285E24 /* Group.swift */; };
+		D879E2921F73171400285E24 /* ResizingConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879E2911F73171400285E24 /* ResizingConstraint.swift */; };
+		D87A0AB01F703E58002DFA65 /* Layer+Simplified.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87A0AAF1F703E58002DFA65 /* Layer+Simplified.swift */; };
+		D8AAB1852040D99000E70D9B /* Bash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AAB1842040D99000E70D9B /* Bash.swift */; };
+		D8C011DA1F69DAC1001E14F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C011D81F69DAC1001E14F7 /* main.swift */; };
+		D8C011DB1F69DAC1001E14F7 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C011D91F69DAC1001E14F7 /* JsonUtils.swift */; };
+		D8CE8E421F8BF40500E52A91 /* IdentifierStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE8E411F8BF40500E52A91 /* IdentifierStore.swift */; };
+		D8F2D4411FDF5A7000E6CD95 /* SharedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2D4401FDF5A6F00E6CD95 /* SharedUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8C011C61F69C86B001E14F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D81A13231F6B452E007144D1 /* CommonFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFactories.swift; sourceTree = "<group>"; };
+		D81A132A1F6C48B7007144D1 /* Layer+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A132C1F6C48E0007144D1 /* Page+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A132E1F6C4EFD007144D1 /* Artboard+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artboard+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13301F6C4F41007144D1 /* SymbolMaster+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolMaster+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13321F6C5037007144D1 /* Group+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13341F6C5076007144D1 /* Shape+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13361F6C509F007144D1 /* Bitmap+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bitmap+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13381F6C50A9007144D1 /* Text+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A133A1F6C55A4007144D1 /* Gradient+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A133C1F6C55BD007144D1 /* SymbolInstance+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolInstance+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A133E1F6C5609007144D1 /* CGRect+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+SketchJson.swift"; sourceTree = "<group>"; };
+		D81A13401F6C5623007144D1 /* Color+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+SketchJson.swift"; sourceTree = "<group>"; };
+		D81EA3021FA28E4C00A06CB2 /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
+		D82C338C1F95807400FCEF66 /* Group+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+Simplified.swift"; sourceTree = "<group>"; };
+		D82C338E1F9580C600FCEF66 /* Artboard+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artboard+Simplified.swift"; sourceTree = "<group>"; };
+		D82C33901F9580F000FCEF66 /* Shape+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+Simplified.swift"; sourceTree = "<group>"; };
+		D82C33921F95810E00FCEF66 /* Text+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Simplified.swift"; sourceTree = "<group>"; };
+		D82C33941F95813100FCEF66 /* Page+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+Simplified.swift"; sourceTree = "<group>"; };
+		D82C33961F95814D00FCEF66 /* Symbol+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Symbol+Simplified.swift"; sourceTree = "<group>"; };
+		D84B6EDC1F7C156F00748A3F /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shadow.swift; path = ../../Shared/Shadow.swift; sourceTree = "<group>"; };
+		D85E37201F7C4461009EB5FC /* Shadow+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shadow+SketchJson.swift"; sourceTree = "<group>"; };
+		D86378471FD8B27C003124BB /* ShapePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapePath.swift; path = ../../Shared/ShapePath.swift; sourceTree = "<group>"; };
+		D863784B1FD8BA0C003124BB /* ShapePath+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapePath+SketchJson.swift"; sourceTree = "<group>"; };
+		D86B35BF1F75DAEA00864EE7 /* Document+SketchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+SketchJson.swift"; sourceTree = "<group>"; };
+		D879E2771F72EAE800285E24 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = ../../Shared/Group.swift; sourceTree = "<group>"; };
+		D879E2781F72EAE800285E24 /* Artboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Artboard.swift; path = ../../Shared/Artboard.swift; sourceTree = "<group>"; };
+		D879E2791F72EAE800285E24 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Document.swift; path = ../../Shared/Document.swift; sourceTree = "<group>"; };
+		D879E27A1F72EAE800285E24 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Gradient.swift; path = ../../Shared/Gradient.swift; sourceTree = "<group>"; };
+		D879E27B1F72EAE800285E24 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Page.swift; path = ../../Shared/Page.swift; sourceTree = "<group>"; };
+		D879E27C1F72EAE800285E24 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = ../../Shared/Layer.swift; sourceTree = "<group>"; };
+		D879E27D1F72EAE900285E24 /* CoreGraphics+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreGraphics+Extensions.swift"; path = "../../Shared/CoreGraphics+Extensions.swift"; sourceTree = "<group>"; };
+		D879E27E1F72EAE900285E24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Color.swift; path = ../../Shared/Color.swift; sourceTree = "<group>"; };
+		D879E27F1F72EAE900285E24 /* JsonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JsonProtocols.swift; path = ../../Shared/JsonProtocols.swift; sourceTree = "<group>"; };
+		D879E2801F72EAE900285E24 /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bitmap.swift; path = ../../Shared/Bitmap.swift; sourceTree = "<group>"; };
+		D879E2811F72EAE900285E24 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = ../../Shared/Shape.swift; sourceTree = "<group>"; };
+		D879E2821F72EAE900285E24 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Symbol.swift; path = ../../Shared/Symbol.swift; sourceTree = "<group>"; };
+		D879E2831F72EAE900285E24 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Text.swift; path = ../../Shared/Text.swift; sourceTree = "<group>"; };
+		D879E2911F73171400285E24 /* ResizingConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingConstraint.swift; sourceTree = "<group>"; };
+		D87A0AAF1F703E58002DFA65 /* Layer+Simplified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+Simplified.swift"; sourceTree = "<group>"; };
+		D8AAB1842040D99000E70D9B /* Bash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
+		D8C011C81F69C86B001E14F7 /* salsa */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = salsa; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C011D81F69DAC1001E14F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D8C011D91F69DAC1001E14F7 /* JsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtils.swift; sourceTree = "<group>"; };
+		D8CE8E411F8BF40500E52A91 /* IdentifierStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierStore.swift; sourceTree = "<group>"; };
+		D8F2D4401FDF5A6F00E6CD95 /* SharedUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedUtils.swift; path = ../../Shared/SharedUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C011C51F69C86B001E14F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D81A13291F6C489B007144D1 /* SketchJson */ = {
+			isa = PBXGroup;
+			children = (
+				D879E2911F73171400285E24 /* ResizingConstraint.swift */,
+				D81A13231F6B452E007144D1 /* CommonFactories.swift */,
+				D86B35BF1F75DAEA00864EE7 /* Document+SketchJson.swift */,
+				D81A132A1F6C48B7007144D1 /* Layer+SketchJson.swift */,
+				D81A132C1F6C48E0007144D1 /* Page+SketchJson.swift */,
+				D81A132E1F6C4EFD007144D1 /* Artboard+SketchJson.swift */,
+				D81A13301F6C4F41007144D1 /* SymbolMaster+SketchJson.swift */,
+				D81A133C1F6C55BD007144D1 /* SymbolInstance+SketchJson.swift */,
+				D81A13321F6C5037007144D1 /* Group+SketchJson.swift */,
+				D81A13341F6C5076007144D1 /* Shape+SketchJson.swift */,
+				D81A13361F6C509F007144D1 /* Bitmap+SketchJson.swift */,
+				D81A13381F6C50A9007144D1 /* Text+SketchJson.swift */,
+				D81A133A1F6C55A4007144D1 /* Gradient+SketchJson.swift */,
+				D81A133E1F6C5609007144D1 /* CGRect+SketchJson.swift */,
+				D81A13401F6C5623007144D1 /* Color+SketchJson.swift */,
+				D85E37201F7C4461009EB5FC /* Shadow+SketchJson.swift */,
+				D863784B1FD8BA0C003124BB /* ShapePath+SketchJson.swift */,
+			);
+			path = SketchJson;
+			sourceTree = "<group>";
+		};
+		D85FDFB91F83FF8200CEBC5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8C011D91F69DAC1001E14F7 /* JsonUtils.swift */,
+				D8CE8E411F8BF40500E52A91 /* IdentifierStore.swift */,
+				D81EA3021FA28E4C00A06CB2 /* NSAttributedString+Utils.swift */,
+				D8AAB1842040D99000E70D9B /* Bash.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D85FDFBD1F85A1B300CEBC5E /* Simplified */ = {
+			isa = PBXGroup;
+			children = (
+				D87A0AAF1F703E58002DFA65 /* Layer+Simplified.swift */,
+				D82C33901F9580F000FCEF66 /* Shape+Simplified.swift */,
+				D82C33921F95810E00FCEF66 /* Text+Simplified.swift */,
+				D82C33941F95813100FCEF66 /* Page+Simplified.swift */,
+				D82C338C1F95807400FCEF66 /* Group+Simplified.swift */,
+				D82C338E1F9580C600FCEF66 /* Artboard+Simplified.swift */,
+				D82C33961F95814D00FCEF66 /* Symbol+Simplified.swift */,
+			);
+			path = Simplified;
+			sourceTree = "<group>";
+		};
+		D879E2761F72EAE100285E24 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D879E2781F72EAE800285E24 /* Artboard.swift */,
+				D879E2801F72EAE900285E24 /* Bitmap.swift */,
+				D879E27E1F72EAE900285E24 /* Color.swift */,
+				D879E27D1F72EAE900285E24 /* CoreGraphics+Extensions.swift */,
+				D879E2791F72EAE800285E24 /* Document.swift */,
+				D879E27A1F72EAE800285E24 /* Gradient.swift */,
+				D879E27F1F72EAE900285E24 /* JsonProtocols.swift */,
+				D879E27B1F72EAE800285E24 /* Page.swift */,
+				D879E2811F72EAE900285E24 /* Shape.swift */,
+				D879E27C1F72EAE800285E24 /* Layer.swift */,
+				D879E2821F72EAE900285E24 /* Symbol.swift */,
+				D879E2831F72EAE900285E24 /* Text.swift */,
+				D879E2771F72EAE800285E24 /* Group.swift */,
+				D84B6EDC1F7C156F00748A3F /* Shadow.swift */,
+				D86378471FD8B27C003124BB /* ShapePath.swift */,
+				D8F2D4401FDF5A6F00E6CD95 /* SharedUtils.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		D8C011BF1F69C86B001E14F7 = {
+			isa = PBXGroup;
+			children = (
+				D8C011CA1F69C86B001E14F7 /* SalsaCompiler */,
+				D8C011C91F69C86B001E14F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C011C91F69C86B001E14F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C011C81F69C86B001E14F7 /* salsa */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C011CA1F69C86B001E14F7 /* SalsaCompiler */ = {
+			isa = PBXGroup;
+			children = (
+				D8C011D81F69DAC1001E14F7 /* main.swift */,
+				D85FDFBD1F85A1B300CEBC5E /* Simplified */,
+				D85FDFB91F83FF8200CEBC5E /* Utils */,
+				D879E2761F72EAE100285E24 /* Shared */,
+				D81A13291F6C489B007144D1 /* SketchJson */,
+			);
+			path = SalsaCompiler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C011C71F69C86B001E14F7 /* SalsaCompiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C011CF1F69C86B001E14F7 /* Build configuration list for PBXNativeTarget "SalsaCompiler" */;
+			buildPhases = (
+				D8C011C41F69C86B001E14F7 /* Sources */,
+				D8C011C51F69C86B001E14F7 /* Frameworks */,
+				D8C011C61F69C86B001E14F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalsaCompiler;
+			productName = SketchCompiler;
+			productReference = D8C011C81F69C86B001E14F7 /* salsa */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C011C01F69C86B001E14F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Yelp;
+				TargetAttributes = {
+					D8C011C71F69C86B001E14F7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8C011C31F69C86B001E14F7 /* Build configuration list for PBXProject "SalsaCompiler" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8C011BF1F69C86B001E14F7;
+			productRefGroup = D8C011C91F69C86B001E14F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C011C71F69C86B001E14F7 /* SalsaCompiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C011C41F69C86B001E14F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C011DB1F69DAC1001E14F7 /* JsonUtils.swift in Sources */,
+				D879E28A1F72EAFF00285E24 /* JsonProtocols.swift in Sources */,
+				D81A133F1F6C5609007144D1 /* CGRect+SketchJson.swift in Sources */,
+				D82C338F1F9580C600FCEF66 /* Artboard+Simplified.swift in Sources */,
+				D879E2921F73171400285E24 /* ResizingConstraint.swift in Sources */,
+				D879E2861F72EAF100285E24 /* Color.swift in Sources */,
+				D87A0AB01F703E58002DFA65 /* Layer+Simplified.swift in Sources */,
+				D8C011DA1F69DAC1001E14F7 /* main.swift in Sources */,
+				D879E2851F72EAEE00285E24 /* Bitmap.swift in Sources */,
+				D81A13371F6C509F007144D1 /* Bitmap+SketchJson.swift in Sources */,
+				D8F2D4411FDF5A7000E6CD95 /* SharedUtils.swift in Sources */,
+				D82C33971F95814D00FCEF66 /* Symbol+Simplified.swift in Sources */,
+				D84B6EDD1F7C156F00748A3F /* Shadow.swift in Sources */,
+				D82C33911F9580F000FCEF66 /* Shape+Simplified.swift in Sources */,
+				D81A133D1F6C55BD007144D1 /* SymbolInstance+SketchJson.swift in Sources */,
+				D8CE8E421F8BF40500E52A91 /* IdentifierStore.swift in Sources */,
+				D81A132F1F6C4EFD007144D1 /* Artboard+SketchJson.swift in Sources */,
+				D81A13411F6C5623007144D1 /* Color+SketchJson.swift in Sources */,
+				D879E28D1F72EB0700285E24 /* Layer.swift in Sources */,
+				D81A13391F6C50A9007144D1 /* Text+SketchJson.swift in Sources */,
+				D879E2841F72EAEC00285E24 /* Artboard.swift in Sources */,
+				D863784C1FD8BA0C003124BB /* ShapePath+SketchJson.swift in Sources */,
+				D82C338D1F95807400FCEF66 /* Group+Simplified.swift in Sources */,
+				D879E2881F72EAF900285E24 /* Document.swift in Sources */,
+				D879E28B1F72EB0200285E24 /* Page.swift in Sources */,
+				D879E28F1F72EB0C00285E24 /* Text.swift in Sources */,
+				D85E37211F7C4461009EB5FC /* Shadow+SketchJson.swift in Sources */,
+				D81A13241F6B452E007144D1 /* CommonFactories.swift in Sources */,
+				D81A132D1F6C48E0007144D1 /* Page+SketchJson.swift in Sources */,
+				D81A13351F6C5076007144D1 /* Shape+SketchJson.swift in Sources */,
+				D879E28E1F72EB0A00285E24 /* Symbol.swift in Sources */,
+				D86378481FD8B27C003124BB /* ShapePath.swift in Sources */,
+				D81A132B1F6C48B7007144D1 /* Layer+SketchJson.swift in Sources */,
+				D879E2871F72EAF700285E24 /* CoreGraphics+Extensions.swift in Sources */,
+				D81A133B1F6C55A4007144D1 /* Gradient+SketchJson.swift in Sources */,
+				D81EA3031FA28E4C00A06CB2 /* NSAttributedString+Utils.swift in Sources */,
+				D82C33931F95810E00FCEF66 /* Text+Simplified.swift in Sources */,
+				D82C33951F95813100FCEF66 /* Page+Simplified.swift in Sources */,
+				D86B35C01F75DAEA00864EE7 /* Document+SketchJson.swift in Sources */,
+				D879E28C1F72EB0400285E24 /* Shape.swift in Sources */,
+				D81A13331F6C5037007144D1 /* Group+SketchJson.swift in Sources */,
+				D879E2901F72EB0E00285E24 /* Group.swift in Sources */,
+				D8AAB1852040D99000E70D9B /* Bash.swift in Sources */,
+				D81A13311F6C4F41007144D1 /* SymbolMaster+SketchJson.swift in Sources */,
+				D879E2891F72EAFC00285E24 /* Gradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8C011CD1F69C86B001E14F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = salsa;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8C011CE1F69C86B001E14F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = salsa;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D8C011D01F69C86B001E14F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = salsa;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D8C011D11F69C86B001E14F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = salsa;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C011C31F69C86B001E14F7 /* Build configuration list for PBXProject "SalsaCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C011CD1F69C86B001E14F7 /* Debug */,
+				D8C011CE1F69C86B001E14F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C011CF1F69C86B001E14F7 /* Build configuration list for PBXNativeTarget "SalsaCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C011D01F69C86B001E14F7 /* Debug */,
+				D8C011D11F69C86B001E14F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C011C01F69C86B001E14F7 /* Project object */;
+}

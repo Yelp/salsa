@@ -1,0 +1,47 @@
+{
+  "$id": "/bitmap",
+  "type": "object",
+  "title": "Bitmap",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents an image in sketch",
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to Bitmap",
+      "example": "Bitmap",
+      "pattern": "Bitmap"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the image layer as it appears in Sketch",
+      "example": "Image name"
+    },
+    "fileName": {
+      "type": "string",
+      "description": "references the name of an image thats stored in */images/, should not include the file type. i.e. \"my_image\" instead of \"my_image.png\"",
+      "example": "my_image"
+    },
+
+
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "fileName": {
+      "$ref": "#/definitions/fileName"
+    },
+    "frame": {
+      "description": "Position and size of the layer relative to its parent",
+      "$ref": "./rect.json"
+    },
+    "tintColor": {
+      "description": "`(optional)` tint applied to image",
+      "$ref": "./color.json"
+    },
+  },
+  "ypCategory": "Images"
+}

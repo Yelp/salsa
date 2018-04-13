@@ -1,0 +1,10 @@
+target 'SalsaExample' do
+  use_frameworks!
+
+  pod 'Salsa', :path => '../'
+
+  target 'SalsaExampleTests' do
+    inherit! :search_paths
+  end
+
+end

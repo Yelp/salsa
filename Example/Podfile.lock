@@ -1,0 +1,16 @@
+PODS:
+  - Salsa (0.6.0)
+
+DEPENDENCIES:
+  - Salsa (from `../`)
+
+EXTERNAL SOURCES:
+  Salsa:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Salsa: 0bf6b527a180d948d32571cdba64064e67a2cb05
+
+PODFILE CHECKSUM: 3d00e8bb01e78743615fd3289e1ab2f5dcdc0694
+
+COCOAPODS: 1.4.0

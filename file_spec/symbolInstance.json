@@ -1,0 +1,38 @@
+{
+  "$id": "/symbolinstance",
+  "type": "object",
+  "title": "SymbolInstance",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents an instance of a sketch symbol. Name must match the parent symbol master",
+
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to SymbolInstance",
+      "example": "SymbolInstance",
+      "pattern": "SymbolInstance"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the parent symbol",
+      "example": "My Symbol"
+    },
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "frame": {
+      "description": "Position and size of the symbol",
+      "$ref": "./rect.json"
+    },
+    "shadow": {
+      "description": "`(optional)` Shadow that can be attached to layers",
+      "$ref": "./shadow.json",
+    },
+  },
+  "ypCategory": "Symbols"
+}

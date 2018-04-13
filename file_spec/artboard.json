@@ -1,0 +1,49 @@
+{
+  "$id": "/artboard",
+  "type": "object",
+  "title": "Artboard",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Represents a sketch artboard.",
+
+  "definitions": {
+    "_type": {
+      "type": "string",
+      "description": "Must be equal to Artboard",
+      "example": "Artboard",
+      "pattern": "Artboard"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the artboard as it appears in Sketch",
+      "example": "My Artboard"
+    },
+    "layers": {
+      "type": "array",
+      "description": "Child layers",
+      "items": {
+        "description": "Any of the following: `Group`, `Bitmap`, `SymbolInstance`, `Text`, `Shape`",
+      },
+      "example": []
+    }
+  },
+  "properties": {
+    "_type": {
+      "$ref": "#/definitions/_type"
+    },
+    "name": {
+      "$ref": "#/definitions/name"
+    },
+    "layers": {
+      "$ref": "#/definitions/layers"
+    },
+    "color": {
+      "description": "Background color of the artborad",
+      "$ref": "./color.json"
+    },
+    "frame": {
+      "description": "Position and size of the artboard on the page",
+      "$ref": "./rect.json"
+    },
+  },
+  "ypCategory": "Containers"
+}
