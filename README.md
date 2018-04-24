@@ -45,7 +45,7 @@ $ salsa -f /some_directory/my_file.salsa -e /some_directory/my_file.sketch
 ```
 
 ## Creating a Sketch file documenting your standard UI elements
-We provide some helpers to help you document your elements out of the box. You organize examples of your views into an [Artboard](https://www.sketchapp.com/docs/grouping/artboards/) by conforming your view class to `ArboardRepresentable`.
+We provide some helpers to help you document your elements out of the box. You organize examples of your views into an [Artboard](https://www.sketchapp.com/docs/grouping/artboards/) by conforming your view class to [`ArboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html).
 ```swift
 extension View1: ArtboardRepresentable {
   static func artboardElements() -> [[ArtboardElement]] {
@@ -53,7 +53,7 @@ extension View1: ArtboardRepresentable {
   }
 }
 ```
-If you would like to also create [Symbols](https://sketchapp.com/docs/symbols/) of your views to go along with the generated Artboards you can instead conform your views to `SymbolRepresentable`.
+If you would like to also create [Symbols](https://sketchapp.com/docs/symbols/) of your views to go along with the generated Artboards you can instead conform your views to [`SymbolRepresentable`](https://yelp.github.io/salsa/Protocols/SymbolRepresentable.html).
 
 ```swift
 extension View2: SymbolRepresentable {
@@ -62,7 +62,7 @@ extension View2: SymbolRepresentable {
   }
 }
 ```
-Create your Artboards and Symbols from these `ArboardRepresentable`  and `SymbolRepresentable` views
+Create your Artboards and Symbols from these [`ArboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html)  and [`SymbolRepresentable`](https://yelp.github.io/salsa/Protocols/SymbolRepresentable.html) views
 ```swift
 // Configure the export directory
 SalsaConfig.exportDirectory = "/some_directory"
@@ -91,3 +91,6 @@ pod install
 This should create a new file called `ExampleSketch.sketch` inside the project directory
 
 Open up [`generate_sketch`](https://github.com/Yelp/salsa/blob/master/Example/generate_sketch) with a text editor to see how this is done.
+
+## Documentation
+For a full breakdown of the Salsa API [check out the docs](https://yelp.github.io/salsa/index.html)
