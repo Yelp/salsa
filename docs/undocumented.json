@@ -1,0 +1,271 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Factories/UIImageView+SketchFactory.swift",
+      "line": 50,
+      "symbol": "UIImage.saveToDisk()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/Document+Export.swift",
+      "line": 12,
+      "symbol": "Document.DocumentExportError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/Document+Export.swift",
+      "line": 13,
+      "symbol": "Document.DocumentExportError.failedToSerialize",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/Document+Export.swift",
+      "line": 14,
+      "symbol": "Document.DocumentExportError.failedToCreateDirectory",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/Document+Export.swift",
+      "line": 15,
+      "symbol": "Document.DocumentExportError.failedToSaveFile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/SketchieConfig.swift",
+      "line": 11,
+      "symbol": "SalsaConfig",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Salsa/Utils/UIFont+Utils.swift",
+      "line": 31,
+      "symbol": "Text.Style.init(font:color:alignment:isUnderlined:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Artboard.swift",
+      "line": 39,
+      "symbol": "Artboard.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Bitmap.swift",
+      "line": 46,
+      "symbol": "Bitmap.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Color.swift",
+      "line": 28,
+      "symbol": "Color.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 12,
+      "symbol": "CGRect.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 28,
+      "symbol": "CGPoint.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 39,
+      "symbol": "CGRect.top",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 40,
+      "symbol": "CGRect.left",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 41,
+      "symbol": "CGRect.bottom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 42,
+      "symbol": "CGRect.right",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/CoreGraphics+Extensions.swift",
+      "line": 44,
+      "symbol": "CGRect.init(top:left:bottom:right:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Document.swift",
+      "line": 35,
+      "symbol": "Document.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Document.swift",
+      "line": 39,
+      "symbol": "Document.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Gradient.swift",
+      "line": 46,
+      "symbol": "Gradient.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Group.swift",
+      "line": 37,
+      "symbol": "Group.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Layer.swift",
+      "line": 22,
+      "symbol": "Layer.shadow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Layer.swift",
+      "line": 79,
+      "symbol": "LayerContainer.layers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/ShapePath.swift",
+      "line": 55,
+      "symbol": "RectanglePath.init(frame:cornerRadius:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 42,
+      "symbol": "Text.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 56,
+      "symbol": "Text.Style.Alignment",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 56,
+      "symbol": "Text.Style.Alignment.center",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 56,
+      "symbol": "Text.Style.Alignment.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 56,
+      "symbol": "Text.Style.Alignment.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 90,
+      "symbol": "Text.Style.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 106,
+      "symbol": "Text.Style.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 113,
+      "symbol": "Text.SharedStyle.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 114,
+      "symbol": "Text.SharedStyle.textStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 116,
+      "symbol": "Text.SharedStyle.init(name:textStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 120,
+      "symbol": "Text.SharedStyle.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 124,
+      "symbol": "Text.SharedStyle.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 148,
+      "symbol": "Text.Segment.init(json:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxr/workspace/salsa/Shared/Text.swift",
+      "line": 156,
+      "symbol": "Text.Segment.toJson()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/maxr/workspace/salsa"
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ArtboardRepresentable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ArtboardRepresentable" class="dashAnchor"></a>
+    <a title="ArtboardRepresentable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Salsa Docs</a> (76% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Salsa Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ArtboardRepresentable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Artboard.html">Artboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BezierPath.html">BezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Bitmap.html">Bitmap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Layer.html">Layer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LayerContainer.html">LayerContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RectanglePath.html">RectanglePath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Shape.html">Shape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SymbolInstance.html">SymbolInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SymbolMaster.html">SymbolMaster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text.html">Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/Style.html">– Style</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/SharedStyle.html">– SharedStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/Segment.html">– Segment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIToolbar.html">UIToolbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:5Salsa23makeArtboardsAndSymbolsSayAA8ArtboardCG9artboards_SayAA12SymbolMasterCG7symbolstSaySayAA0F13Representable_pXpGG4from_12CoreGraphics7CGFloatV7paddingtF">makeArtboardsAndSymbols(from:padding:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ArtboardRepresentable.html">ArtboardRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SketchNestable.html">SketchNestable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SymbolRepresentable.html">SymbolRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Document.html">Document</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Document/DocumentExportError.html">– DocumentExportError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Gradient.html">Gradient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Page.html">Page</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SalsaConfig.html">SalsaConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Shadow.html">Shadow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:5Salsa15ArtboardElementa">ArtboardElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ArtboardRepresentable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ArtboardRepresentable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Conform your <code>UIView</code> to this protocol to easily create an <code><a href="../Classes/Artboard.html">Artboard</a></code> for your example views
+Provide example views using the artboardElements() method and create an artboard by calling <code>makeArtboard(origin:)</code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP16artboardElementsSaySaySo6UIViewC4view_SS4nametGGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/artboardElements()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP16artboardElementsSaySaySo6UIViewC4view_SS4nametGGyFZ">artboardElements()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The only required method that needs to be implemented
+Returns vertical stacks of ArtboardElements</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">artboardElements</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[[</span><span class="kt"><a href="../Typealiases.html#/s:5Salsa15ArtboardElementa">ArtboardElement</a></span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP4nameSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP4nameSSvpZ">name</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Name of the artboard.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defaults to the name of self</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP9viewWidth12CoreGraphics7CGFloatVSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/viewWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP9viewWidth12CoreGraphics7CGFloatVSgvpZ">viewWidth</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fixed width to use for views provided in artboardElements()
+Set to nil to have the view be self sized</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defaults to the screen width</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">viewWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP14artboardInsetsSC06UIEdgeE0VvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/artboardInsets" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP14artboardInsetsSC06UIEdgeE0VvpZ">artboardInsets</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insets to the edges of the artboard</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defaults to .zero</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">artboardInsets</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP15artboardSpacing12CoreGraphics7CGFloatVvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/artboardSpacing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP15artboardSpacing12CoreGraphics7CGFloatVvpZ">artboardSpacing</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Spacing between artboard elements</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defaults to 8</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">artboardSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP13artboardColorAA0E0CvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/artboardColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP13artboardColorAA0E0CvpZ">artboardColor</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Background color of the artboard</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Defaults to #F5F5F5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">artboardColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa21ArtboardRepresentableP04makeB0AA0B0CSC7CGPointV6origin_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/makeArtboard(origin:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa21ArtboardRepresentableP04makeB0AA0B0CSC7CGPointV6origin_tFZ">makeArtboard(origin:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates an <code><a href="../Classes/Artboard.html">Artboard</a></code> containing examples of the conforming type</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Creates an artboard using the elements provided in <code>artboardElements()</code>.</p>
+
+<p>Views provided in <code>artboardElements()</code> will be automatically laid out</p>
+
+<p>Each set of <code>ArtboardElement</code> will be stacked vertically inside the <code>Artboard</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeArtboard</span><span class="p">(</span><span class="nv">origin</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Artboard.html">Artboard</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/yelp" target="_blank" rel="external">Yelp iOS Team</a>. All rights reserved. (Last updated: 2018-04-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

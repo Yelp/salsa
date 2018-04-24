@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shape Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Shape" class="dashAnchor"></a>
+    <a title="Shape Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Salsa Docs</a> (76% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Salsa Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Shape Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Artboard.html">Artboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BezierPath.html">BezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Bitmap.html">Bitmap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Layer.html">Layer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LayerContainer.html">LayerContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RectanglePath.html">RectanglePath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Shape.html">Shape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SymbolInstance.html">SymbolInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SymbolMaster.html">SymbolMaster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text.html">Text</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/Style.html">– Style</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/SharedStyle.html">– SharedStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Text/Segment.html">– Segment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIToolbar.html">UIToolbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:5Salsa23makeArtboardsAndSymbolsSayAA8ArtboardCG9artboards_SayAA12SymbolMasterCG7symbolstSaySayAA0F13Representable_pXpGG4from_12CoreGraphics7CGFloatV7paddingtF">makeArtboardsAndSymbols(from:padding:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ArtboardRepresentable.html">ArtboardRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SketchNestable.html">SketchNestable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SymbolRepresentable.html">SymbolRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Document.html">Document</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Document/DocumentExportError.html">– DocumentExportError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Gradient.html">Gradient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Page.html">Page</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SalsaConfig.html">SalsaConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Shadow.html">Shadow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:5Salsa15ArtboardElementa">ArtboardElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Shape</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Shape</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Layer.html">Layer</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a Shape layer in Sketch</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeC15backgroundColorAA0D0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeC15backgroundColorAA0D0Cvp">backgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Background color of the Shape</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeC11borderWidth12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/borderWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeC11borderWidth12CoreGraphics7CGFloatVvp">borderWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Thickness of the border</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">borderWidth</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeC11borderColorAA0D0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/borderColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeC11borderColorAA0D0Cvp">borderColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Color of the border</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeC8gradientAA8GradientVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/gradient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeC8gradientAA8GradientVSgvp">gradient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional gradient. If this is set then <code><a href="../Classes/Shape.html#/s:5Salsa5ShapeC15backgroundColorAA0D0Cvp">backgroundColor</a></code> is ignored</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Structs/Gradient.html">Gradient</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeC6isMaskSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isMask" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeC6isMaskSbvp">isMask</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If this is true then this Shape will act as a mask for all layers below it</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isMask</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeCACSS4name_AA5ColorC010backgroundD0AA10BezierPathC06bezierG012CoreGraphics7CGFloatV11borderWidthAF0lD0Sb6isMaskAA8GradientVSg8gradienttcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:backgroundColor:bezierPath:borderWidth:borderColor:isMask:gradient:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeCACSS4name_AA5ColorC010backgroundD0AA10BezierPathC06bezierG012CoreGraphics7CGFloatV11borderWidthAF0lD0Sb6isMaskAA8GradientVSg8gradienttcfc">init(name:backgroundColor:bezierPath:borderWidth:borderColor:isMask:gradient:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a generic Shape layer in Sketch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span><span class="p">,</span> <span class="nv">bezierPath</span><span class="p">:</span> <span class="kt"><a href="../Classes/BezierPath.html">BezierPath</a></span><span class="p">,</span> <span class="nv">borderWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span><span class="p">,</span> <span class="nv">isMask</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Structs/Gradient.html">Gradient</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the Shape as it appears in Sketch</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Background color of the Shape</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bezierPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/BezierPath.html">BezierPath</a></code> representing the structure and posititon of the Shape</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>borderWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Thickness of the border</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>borderColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Color of the border</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isMask</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Wether this Shape will act as a mask for all layers below it</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gradient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional. If this is not nil set then <code><a href="../Classes/Shape.html#/s:5Salsa5ShapeC15backgroundColorAA0D0Cvp">backgroundColor</a></code> is ignored</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeCACSS4name_AA5ColorC010backgroundD0AA13RectanglePathC09rectangleG012CoreGraphics7CGFloatV11borderWidthAF0lD0Sb6isMaskAA8GradientVSg8gradienttcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:backgroundColor:rectanglePath:borderWidth:borderColor:isMask:gradient:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeCACSS4name_AA5ColorC010backgroundD0AA13RectanglePathC09rectangleG012CoreGraphics7CGFloatV11borderWidthAF0lD0Sb6isMaskAA8GradientVSg8gradienttcfc">init(name:backgroundColor:rectanglePath:borderWidth:borderColor:isMask:gradient:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a rectangular Shape layer in Sketch. Use this to be able to surface corner radius sliders in sketch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span><span class="p">,</span> <span class="nv">rectanglePath</span><span class="p">:</span> <span class="kt"><a href="../Classes/RectanglePath.html">RectanglePath</a></span><span class="p">,</span> <span class="nv">borderWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">borderColor</span><span class="p">:</span> <span class="kt"><a href="../Classes/Color.html">Color</a></span><span class="p">,</span> <span class="nv">isMask</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Structs/Gradient.html">Gradient</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the Shape as it appears in Sketch</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>backgroundColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Background color of the Shape</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rectanglePath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/RectanglePath.html">RectanglePath</a></code> representing the structure and position of the Shape</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>borderWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Thickness of the border</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>borderColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Color of the border</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isMask</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>this is true then this Shape will act as a mask for all layers below it</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gradient</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional. If this is not nil set then <code><a href="../Classes/Shape.html#/s:5Salsa5ShapeC15backgroundColorAA0D0Cvp">backgroundColor</a></code> is ignored</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/JSONDictEncodable"></a>
+                <a name="//apple_ref/swift/Section/JSONDictEncodable" class="dashAnchor"></a>
+                <a href="#/JSONDictEncodable">
+                  <h3 class="section-name">JSONDictEncodable</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Salsa5ShapeCACSgs10DictionaryVySSypG4json_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(json:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Salsa5ShapeCACSgs10DictionaryVySSypG4json_tcfc">init(json:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">json</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/yelp" target="_blank" rel="external">Yelp iOS Team</a>. All rights reserved. (Last updated: 2018-04-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
