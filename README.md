@@ -45,7 +45,7 @@ $ salsa -f /some_directory/my_file.salsa -e /some_directory/my_file.sketch
 ```
 
 ## Creating a Sketch file documenting your standard UI elements
-We provide some helpers to help you document your elements out of the box. You organize examples of your views into an [Artboard](https://www.sketchapp.com/docs/grouping/artboards/) by conforming your view class to [`ArboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html).
+We provide some helpers to help you document your elements out of the box. You organize examples of your views into an [Artboard](https://www.sketchapp.com/docs/grouping/artboards/) by conforming your view class to [`ArtboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html).
 ```swift
 extension View1: ArtboardRepresentable {
   static func artboardElements() -> [[ArtboardElement]] {
@@ -62,7 +62,7 @@ extension View2: SymbolRepresentable {
   }
 }
 ```
-Create your Artboards and Symbols from these [`ArboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html)  and [`SymbolRepresentable`](https://yelp.github.io/salsa/Protocols/SymbolRepresentable.html) views
+Create your Artboards and Symbols from these [`ArtboardRepresentable`](https://yelp.github.io/salsa/Protocols/ArtboardRepresentable.html)  and [`SymbolRepresentable`](https://yelp.github.io/salsa/Protocols/SymbolRepresentable.html) views
 ```swift
 // Configure the export directory
 SalsaConfig.exportDirectory = "/some_directory"
