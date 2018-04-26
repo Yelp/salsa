@@ -50,9 +50,8 @@ extension Artboard {
     var y = padding
     let text: [Text] = FontStyle.allStyles.map { textStyle in
       let fontName = textStyle.font.sketchCompatibleName
-      let fontType = fontName.components(separatedBy: "-").last!
       let label = UILabel()
-      label.text = "\(String(describing: textStyle)) (\(Int(textStyle.font.pointSize))pt \(fontType))"
+      label.text = "\(String(describing: textStyle)) (\(Int(textStyle.font.pointSize))pt \(fontName))"
       label.font = textStyle.font
       label.translatesAutoresizingMaskIntoConstraints = false
       let size = label.systemLayoutSizeFitting(UILayoutFittingCompressedSize)

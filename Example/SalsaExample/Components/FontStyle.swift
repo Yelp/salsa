@@ -13,13 +13,13 @@ enum FontStyle {
   var font: UIFont {
     switch self {
     case .large:
-      return .systemFont(ofSize: 18)
+      return UIFont(name: "HelveticaNeue", size: 18)!
     case .regular:
-      return .systemFont(ofSize: 14)
+      return UIFont(name: "HelveticaNeue", size: 14)!
     case .regularBold:
-      return .boldSystemFont(ofSize: 14)
+      return UIFont(name: "HelveticaNeue-Bold", size: 14)!
     case .small:
-      return .systemFont(ofSize: 12)
+      return UIFont(name: "HelveticaNeue", size: 12)!
     }
   }
 
