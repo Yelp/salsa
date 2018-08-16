@@ -52,31 +52,40 @@ let exportFile: URL = {
 // Find a name for the working directory
 let workingDirectory: String = {
   while true {
-    let directory = "/tmp/Salsa/\(UUID().uuidString)"
+    let directory = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString, isDirectory: true).absoluteString
     if !FileManager.default.fileExists(atPath: directory) {
       return directory
     }
   }
 }()
 
+func cleanupWorkingDirectory() {
+  try? FileManager.default.removeItem(atPath: workingDirectory)
+}
+
+func exit(withMessage message: String) -> Never {
+  cleanupWorkingDirectory()
+  fatalError(message)
+}
+
 // Create the working directory
 do {
   try FileManager.default.createDirectory(atPath: workingDirectory, withIntermediateDirectories: true, attributes: nil)
 } catch {
-  fatalError("Failed to create directory: \(workingDirectory)")
+  exit(withMessage: "Failed to create directory: \(workingDirectory)")
 }
 
 // Clone images into the working directory
 do {
   try FileManager.default.copyItem(atPath: imagesDirectory.path, toPath: "\(workingDirectory)/images")
 } catch {
-  fatalError("Failed to clone images directory: \(imagesDirectory)")
+  exit(withMessage: "Failed to clone images directory: \(imagesDirectory)")
 }
 
 // Read in the input file
 let json = parseJsonFile(at: filePath.path)
 guard let document = Document(json: json) else {
-  fatalError("Failed to parse \(filePath.lastPathComponent)")
+  exit(withMessage: "Failed to parse \(filePath.lastPathComponent)")
 }
 
 // Create /pages/ directory
@@ -84,7 +93,7 @@ let pagesPath = "\(workingDirectory)/pages/"
 do {
   try FileManager.default.createDirectory(atPath: pagesPath, withIntermediateDirectories: true, attributes: nil)
 } catch {
-  fatalError("Failed to create directory: \(pagesPath)")
+  exit(withMessage: "Failed to create directory: \(pagesPath)")
 }
 
 // Configure identifiers for shared objects
@@ -92,19 +101,19 @@ IdentifierStore.configure(with: document)
 
 // Convert pages to json and save them to disk
 document.pages.enumerated().forEach { index, page in
-  guard let pageID = IdentifierStore.identifier(forPageNamed: page.name) else { fatalError("Failed to create page \(index + 1)")  }
+  guard let pageID = IdentifierStore.identifier(forPageNamed: page.name) else { exit(withMessage: "Failed to create page \(index + 1)")  }
   do {
     let url = NSURL.fileURL(withPath: "\(workingDirectory)/pages/\(pageID).json")
-    guard let pageJsonString = page.simplified().toSketchJson().toJsonString() else { fatalError("Failed to parse page \(index + 1)") }
+    guard let pageJsonString = page.simplified().toSketchJson().toJsonString() else { exit(withMessage: "Failed to parse page \(index + 1)") }
     try pageJsonString.write(to: url, atomically: false, encoding: String.Encoding.utf8)
   } catch {
-    fatalError("Failed to save page \(index + 1)")
+    exit(withMessage: "Failed to save page \(index + 1)")
   }
 }
 
 // Create document.json
-guard let documentJson = document.toSketchJson(pageIds: document.pages.reversed().flatMap { IdentifierStore.identifier(forPageNamed: $0.name) }).toJsonString() else {
-  fatalError("Failed to convert document to json")
+guard let documentJson = document.toSketchJson(pageIds: document.pages.reversed().compactMap { IdentifierStore.identifier(forPageNamed: $0.name) }).toJsonString() else {
+  exit(withMessage: "Failed to convert document to json")
 }
 
 // Save document.json to disk
@@ -112,12 +121,12 @@ do {
   let url = NSURL.fileURL(withPath: "\(workingDirectory)/document.json")
   try documentJson.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
-  fatalError("Failed to save document.json to disk")
+  exit(withMessage: "Failed to save document.json to disk")
 }
 
 // Create meta.json
 guard let metaData = makeMetaData().toJsonString() else {
-  fatalError("Failed to generate meta.json")
+  exit(withMessage: "Failed to generate meta.json")
 }
 
 // Save meta.json to disk
@@ -125,7 +134,7 @@ do {
   let url = NSURL.fileURL(withPath: "\(workingDirectory)/meta.json")
   try metaData.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
-  fatalError("Failed to save meta.json")
+  exit(withMessage: "Failed to save meta.json")
 }
 
 // Sketch requires that this file exists but it doesn't need to contain anything
@@ -134,7 +143,7 @@ do {
   let url = NSURL.fileURL(withPath: "\(workingDirectory)/user.json")
   try [String: Any]().toJsonString()!.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
-  fatalError("Failed to save user.json")
+  exit(withMessage: "Failed to save user.json")
 }
 
 
@@ -146,17 +155,17 @@ if !FileManager.default.fileExists(atPath: exportDirectory) {
   do {
     try FileManager.default.createDirectory(atPath: exportDirectory, withIntermediateDirectories: true, attributes: nil)
   } catch {
-    fatalError("Failed to create directory: \(exportDirectory)")
+    exit(withMessage: "Failed to create directory: \(exportDirectory)")
   }
 }
 
 // Swift doesn't come with zipping utilities. Instead of adding one as a dependency we just use bash to zip our exported files into a sketch file
 guard bash(command: "zip", arguments: ["-r", "\(exportDirectory)/\(exportFileName)", "./"], directory: workingDirectory).returnCode == 0 else {
-  fatalError("Failed to create zipped .sketch file. Do you have zip installed?")
+  exit(withMessage: "Failed to create zipped .sketch file. Do you have zip installed?")
 }
 
 // Clean up our working directory
-try? FileManager.default.removeItem(atPath: workingDirectory)
+cleanupWorkingDirectory()
 
 print("(☞ﾟヮﾟ)☞ Generated \(exportFile.path) ☜(ﾟヮﾟ☜)")
 

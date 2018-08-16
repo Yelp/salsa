@@ -10,7 +10,9 @@ import Cocoa
 
 extension Text {
   override func toSketchJson() -> [String: Any] {
-    guard let firstSegment = segments.first else { fatalError("Can't initialize text with no text segments") }
+    guard let firstSegment = segments.first else {
+      exit(withMessage: "Can't initialize text with no text segments")
+    }
     var constraints: [ResizingConstraint] = {
       switch firstSegment.style.alignment {
       case .left: return [.left]
@@ -73,7 +75,7 @@ extension Text {
       let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
       paragraphStyle.alignment = segment.style.alignment.nsTextAlignment()
       guard let font = NSFont(name: segment.style.fontDescriptor, size: segment.style.fontSize) else {
-        fatalError("Could not find font: \(segment.style.fontDescriptor)")
+        exit(withMessage: "Could not find font: \(segment.style.fontDescriptor)")
       }
 
       // Sketch creates attributed strings with a custom attribute for font
@@ -256,7 +258,7 @@ extension Text.Style.Alignment {
 extension Text.SharedStyle: SketchJsonConvertable {
   func toSketchJson() -> [String: Any] {
     guard let id = IdentifierStore.identifier(forTextStyle: textStyle) else {
-      fatalError("Failed to get identifier for shared style named: \(name)")
+      exit(withMessage: "Failed to get identifier for shared style named: \(name)")
     }
     return [
       "_class": "sharedStyle",
