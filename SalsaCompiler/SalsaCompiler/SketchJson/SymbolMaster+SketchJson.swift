@@ -11,7 +11,7 @@ import Foundation
 extension SymbolMaster {
   override func toSketchJson() -> [String : Any] {
     guard let symbolID = IdentifierStore.identifier(forSymbolNamed: name) else {
-      fatalError("Could not find symbol named: \(name)")
+      exit(withMessage: "Could not find symbol named: \(name)")
     }
     return super.toSketchJson().merging(with: [
       "_class": "symbolMaster",

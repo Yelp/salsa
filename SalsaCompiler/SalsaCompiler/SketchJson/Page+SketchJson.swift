@@ -11,7 +11,7 @@ import Foundation
 extension Page: SketchJsonConvertable {
   func toSketchJson() -> [String: Any] {
     guard let id = IdentifierStore.identifier(forPageNamed: name) else {
-      fatalError("Couldn't get id for page: \(name)")
+      exit(withMessage: "Couldn't get id for page: \(name)")
     }
     return Layer.makeBaseSketchJson().merging(with: [
       "do_objectID": id,

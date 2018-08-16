@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Building project and exporting view snapshots"
-xcodebuild test -workspace SalsaExample.xcworkspace/ -scheme SalsaExample -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.3'
+xcodebuild test -workspace SalsaExample.xcworkspace/ -scheme SalsaExample -destination 'platform=iOS Simulator,name=iPhone 8'
 if [ $? -ne 0 ]; then
 	echo "Failed to export view snapshots"
 	exit 1
