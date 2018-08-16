@@ -50,17 +50,18 @@ let exportFile: URL = {
 
 
 // Find a name for the working directory
-let workingDirectory: String = {
+let workingDirectory: URL = {
+  let tempDir = URL(fileURLWithPath: NSTemporaryDirectory())
   while true {
-    let directory = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString, isDirectory: true).absoluteString
-    if !FileManager.default.fileExists(atPath: directory) {
+    let directory = tempDir.appendingPathComponent(UUID().uuidString, isDirectory: true)
+    if !FileManager.default.fileExists(atPath: directory.path) {
       return directory
     }
   }
 }()
 
 func cleanupWorkingDirectory() {
-  try? FileManager.default.removeItem(atPath: workingDirectory)
+  try? FileManager.default.removeItem(at: workingDirectory)
 }
 
 func exit(withMessage message: String) -> Never {
@@ -70,16 +71,16 @@ func exit(withMessage message: String) -> Never {
 
 // Create the working directory
 do {
-  try FileManager.default.createDirectory(atPath: workingDirectory, withIntermediateDirectories: true, attributes: nil)
+  try FileManager.default.createDirectory(at: workingDirectory, withIntermediateDirectories: true, attributes: nil)
 } catch {
-  exit(withMessage: "Failed to create directory: \(workingDirectory)")
+  exit(withMessage: "Failed to create directory: \(workingDirectory.path)")
 }
 
 // Clone images into the working directory
 do {
-  try FileManager.default.copyItem(atPath: imagesDirectory.path, toPath: "\(workingDirectory)/images")
+  try FileManager.default.copyItem(at: imagesDirectory, to: workingDirectory.appendingPathComponent("images", isDirectory: true))
 } catch {
-  exit(withMessage: "Failed to clone images directory: \(imagesDirectory)")
+  exit(withMessage: "Failed to clone images directory: \(imagesDirectory.path)")
 }
 
 // Read in the input file
@@ -89,11 +90,11 @@ guard let document = Document(json: json) else {
 }
 
 // Create /pages/ directory
-let pagesPath = "\(workingDirectory)/pages/"
+let pagesDirectory = workingDirectory.appendingPathComponent("pages", isDirectory: true)
 do {
-  try FileManager.default.createDirectory(atPath: pagesPath, withIntermediateDirectories: true, attributes: nil)
+  try FileManager.default.createDirectory(at: pagesDirectory, withIntermediateDirectories: true, attributes: nil)
 } catch {
-  exit(withMessage: "Failed to create directory: \(pagesPath)")
+  exit(withMessage: "Failed to create directory: \(pagesDirectory.path)")
 }
 
 // Configure identifiers for shared objects
@@ -103,7 +104,7 @@ IdentifierStore.configure(with: document)
 document.pages.enumerated().forEach { index, page in
   guard let pageID = IdentifierStore.identifier(forPageNamed: page.name) else { exit(withMessage: "Failed to create page \(index + 1)")  }
   do {
-    let url = NSURL.fileURL(withPath: "\(workingDirectory)/pages/\(pageID).json")
+    let url = pagesDirectory.appendingPathComponent("\(pageID).json")
     guard let pageJsonString = page.simplified().toSketchJson().toJsonString() else { exit(withMessage: "Failed to parse page \(index + 1)") }
     try pageJsonString.write(to: url, atomically: false, encoding: String.Encoding.utf8)
   } catch {
@@ -118,7 +119,7 @@ guard let documentJson = document.toSketchJson(pageIds: document.pages.reversed(
 
 // Save document.json to disk
 do {
-  let url = NSURL.fileURL(withPath: "\(workingDirectory)/document.json")
+  let url = workingDirectory.appendingPathComponent("document.json")
   try documentJson.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
   exit(withMessage: "Failed to save document.json to disk")
@@ -131,7 +132,7 @@ guard let metaData = makeMetaData().toJsonString() else {
 
 // Save meta.json to disk
 do {
-  let url = NSURL.fileURL(withPath: "\(workingDirectory)/meta.json")
+  let url = workingDirectory.appendingPathComponent("meta.json")
   try metaData.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
   exit(withMessage: "Failed to save meta.json")
@@ -140,27 +141,27 @@ do {
 // Sketch requires that this file exists but it doesn't need to contain anything
 // Its used to recover your position and state in the document on subsequent launches
 do {
-  let url = NSURL.fileURL(withPath: "\(workingDirectory)/user.json")
+  let url = workingDirectory.appendingPathComponent("user.json")
   try [String: Any]().toJsonString()!.write(to: url, atomically: false, encoding: String.Encoding.utf8)
 } catch {
   exit(withMessage: "Failed to save user.json")
 }
 
 
-let exportDirectory = exportFile.deletingLastPathComponent().path
+let exportDirectory = exportFile.deletingLastPathComponent()
 let exportFileName = exportFile.lastPathComponent
 
 // Create the export directory if it doesn't exist
-if !FileManager.default.fileExists(atPath: exportDirectory) {
+if !FileManager.default.fileExists(atPath: exportDirectory.path) {
   do {
-    try FileManager.default.createDirectory(atPath: exportDirectory, withIntermediateDirectories: true, attributes: nil)
+    try FileManager.default.createDirectory(at: exportDirectory, withIntermediateDirectories: true, attributes: nil)
   } catch {
-    exit(withMessage: "Failed to create directory: \(exportDirectory)")
+    exit(withMessage: "Failed to create directory: \(exportDirectory.path)")
   }
 }
 
 // Swift doesn't come with zipping utilities. Instead of adding one as a dependency we just use bash to zip our exported files into a sketch file
-guard bash(command: "zip", arguments: ["-r", "\(exportDirectory)/\(exportFileName)", "./"], directory: workingDirectory).returnCode == 0 else {
+guard bash(command: "zip", arguments: ["-r", "\(exportDirectory.path)/\(exportFileName)", "./"], directory: workingDirectory.path).returnCode == 0 else {
   exit(withMessage: "Failed to create zipped .sketch file. Do you have zip installed?")
 }
 
