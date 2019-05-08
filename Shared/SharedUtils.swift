@@ -40,7 +40,7 @@ extension CGPath {
 
   // Allows us to iterate through the operations of a CGPath
   // taken from https://stackoverflow.com/questions/12992462/how-to-get-the-cgpoints-of-a-cgpath
-  func forEach(body: @convention(block) (CGPathElement) -> Void) {
+  func forEach(body: @escaping @convention(block) (CGPathElement) -> Void) {
     typealias Body = @convention(block) (CGPathElement) -> Void
     let callback: @convention(c) (UnsafeMutableRawPointer, UnsafePointer<CGPathElement>) -> Void = { info, element in
       let body = unsafeBitCast(info, to: Body.self)
