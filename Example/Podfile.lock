@@ -1,16 +1,16 @@
 PODS:
-  - Salsa (0.6.1)
+  - Salsa (0.7.0)
 
 DEPENDENCIES:
   - Salsa (from `../`)
 
 EXTERNAL SOURCES:
   Salsa:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Salsa: 3763eecf273ded03a62562f2b66ddb94009e4194
+  Salsa: 7abf0986363e0608dbf5daa87734d92416e16f2f
 
 PODFILE CHECKSUM: 3d00e8bb01e78743615fd3289e1ab2f5dcdc0694
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.1

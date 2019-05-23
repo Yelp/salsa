@@ -1,3 +1,6 @@
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Salsa.svg?style=flat)](https://img.shields.io/cocoapods/v/Salsa.svg)
+
 ## What is Salsa?
 Salsa is an open source library that renders iOS views and exports them into a Sketch file. We built Salsa to help bridge the gap between design and engineering in an effort to create a single source of truth for visual styling of UI.
 
@@ -8,10 +11,17 @@ Running Salsa inside of an iOS simulator will output two things into a specified
 Certain macOS-only APIs need to be used to encode text for .sketch files. Having two steps allows us to define our own intermediate file format that’s easier to work with than the full sketch file format. This means we can leverage this file format in the future if we want to expand this tool for other platforms.
 
 # Installing Salsa
+### Cocoapods
 ```ruby
 pod 'Salsa'
 ```
 
+### Carthage
+```ruby
+github 'Yelp/salsa'
+```
+
+### Homebrew
 ```bash
 brew tap yelp/salsa
 brew install salsa
