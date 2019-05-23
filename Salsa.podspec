@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Salsa'
-  s.version          = '0.6.1'
+  s.version          = '0.7.0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.summary          = 'Salsa is a tool for generating Sketch files out of iOS UI elements'
   s.homepage         = 'https://github.com/Yelp/salsa'

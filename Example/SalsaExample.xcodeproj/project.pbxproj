@@ -171,7 +171,6 @@
 				D83CE6AA203E39D600F24549 /* Frameworks */,
 				D83CE6AB203E39D600F24549 /* Resources */,
 				4EE5F5732E014669039A5C81 /* [CP] Embed Pods Frameworks */,
-				2E2213025FDAECFCCD6069FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,8 +189,6 @@
 				D83CE6BD203E39D600F24549 /* Sources */,
 				D83CE6BE203E39D600F24549 /* Frameworks */,
 				D83CE6BF203E39D600F24549 /* Resources */,
-				62B06F777953ADA2BD673C62 /* [CP] Embed Pods Frameworks */,
-				30587EC41DDA5350A69A1B57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,36 +261,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E2213025FDAECFCCD6069FA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30587EC41DDA5350A69A1B57 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3FE72297C2C8BB7110115559 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,7 +285,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Salsa/Salsa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -327,22 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62B06F777953ADA2BD673C62 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalsaExampleTests/Pods-SalsaExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SalsaExample/Pods-SalsaExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE37AD9C3D419D78987971CD /* [CP] Check Pods Manifest.lock */ = {
