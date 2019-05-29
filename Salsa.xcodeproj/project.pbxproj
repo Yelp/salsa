@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30EE866320C3D4D600B1F133 /* SalsaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE866220C3D4D600B1F133 /* SalsaUtils.swift */; };
 		D81EA2FF1FA25ED200A06CB2 /* UIFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EA2FE1FA25ED200A06CB2 /* UIFont+Utils.swift */; };
 		D83CE6DD203F88C000F24549 /* Document+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CE6DC203F88C000F24549 /* Document+Export.swift */; };
 		D8471B941FE9E9030090A892 /* CALayer+SketchFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8471B931FE9E9030090A892 /* CALayer+SketchFactory.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30EE866220C3D4D600B1F133 /* SalsaUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalsaUtils.swift; sourceTree = "<group>"; };
 		D81EA2FE1FA25ED200A06CB2 /* UIFont+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Utils.swift"; sourceTree = "<group>"; };
 		D82BEC1A1F4220C000638F8C /* ArtboardRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtboardRepresentable.swift; sourceTree = "<group>"; };
 		D83CE6DC203F88C000F24549 /* Document+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Export.swift"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				D8AD96851FAD2102009486A6 /* UIView+Utils.swift */,
 				D83CE6DC203F88C000F24549 /* Document+Export.swift */,
 				D8B8B48D206036BD006E7F98 /* SketchieConfig.swift */,
+				30EE866220C3D4D600B1F133 /* SalsaUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				D8B8B48E206036BD006E7F98 /* SketchieConfig.swift in Sources */,
 				D8F2D4431FDF5A7900E6CD95 /* SharedUtils.swift in Sources */,
 				D85E37321F7EC482009EB5FC /* SketchNestable.swift in Sources */,
+				30EE866320C3D4D600B1F133 /* SalsaUtils.swift in Sources */,
 				D85E373C1F7EC4B6009EB5FC /* Gradient.swift in Sources */,
 				D83CE6DD203F88C000F24549 /* Document+Export.swift in Sources */,
 				D81EA2FF1FA25ED200A06CB2 /* UIFont+Utils.swift in Sources */,
